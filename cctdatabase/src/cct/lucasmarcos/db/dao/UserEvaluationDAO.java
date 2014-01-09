@@ -2,9 +2,11 @@ package cct.lucasmarcos.db.dao;
 
 import java.sql.SQLException;
 
+import cct.lucasmarcos.model.entity.UserEvaluation;
+
 import com.mysql.jdbc.PreparedStatement;
 
-import cct.lucasmarcos.db.model.UserEvaluation;
+
 
 public class UserEvaluationDAO extends AbstractConnectionDAO{
 	

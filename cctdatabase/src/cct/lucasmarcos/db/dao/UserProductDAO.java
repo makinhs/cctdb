@@ -3,10 +3,12 @@ package cct.lucasmarcos.db.dao;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
+import cct.lucasmarcos.model.entity.Product;
+import cct.lucasmarcos.model.entity.User;
+
 import com.mysql.jdbc.PreparedStatement;
 
-import cct.lucasmarcos.db.model.Product;
-import cct.lucasmarcos.db.model.User;
+
 
 public class UserProductDAO extends AbstractConnectionDAO{
 	public UserProductDAO() {

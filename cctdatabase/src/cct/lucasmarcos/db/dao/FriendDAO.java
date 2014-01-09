@@ -5,7 +5,7 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
-import cct.lucasmarcos.db.model.User;
+import cct.lucasmarcos.model.entity.User;
 
 import com.mysql.jdbc.PreparedStatement;
 

@@ -1,11 +1,15 @@
 package cct.lucasmarcos.db;
 
+
+
+import cct.lucasmarcos.controller.Teste2;
 import cct.lucasmarcos.db.dao.EvaluationDAO;
 import cct.lucasmarcos.db.dao.FriendDAO;
 import cct.lucasmarcos.db.dao.ProductDAO;
 import cct.lucasmarcos.db.dao.UserDAO;
 import cct.lucasmarcos.db.dao.UserProductDAO;
-import cct.lucasmarcos.db.model.User;
+import cct.lucasmarcos.model.entity.User;
+
 
 public class Main {
 	
@@ -20,6 +24,9 @@ public class Main {
 		User user = userDAO.getUser(1);
 		
 		friendDAO.getUserFriends(user);
+		
+		Teste2 t;
+		
 		
 //		Product product = productDAO.getProduct(1);
 //		

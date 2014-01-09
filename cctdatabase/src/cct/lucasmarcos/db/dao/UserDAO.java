@@ -3,7 +3,7 @@ package cct.lucasmarcos.db.dao;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
-import cct.lucasmarcos.db.model.User;
+import cct.lucasmarcos.model.entity.User;
 
 import com.mysql.jdbc.PreparedStatement;
 

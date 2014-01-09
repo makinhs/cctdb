@@ -3,9 +3,13 @@ package cct.lucasmarcos.db.dao;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
-import com.mysql.jdbc.PreparedStatement;
 
-import cct.lucasmarcos.db.model.Evaluation;
+
+
+
+import cct.lucasmarcos.model.entity.Evaluation;
+
+import com.mysql.jdbc.PreparedStatement;
 
 public class EvaluationDAO extends AbstractConnectionDAO{
 	
