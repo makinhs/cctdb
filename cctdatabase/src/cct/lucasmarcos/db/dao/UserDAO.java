@@ -2,6 +2,8 @@ package cct.lucasmarcos.db.dao;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.util.ArrayList;
+import java.util.List;
 
 import cct.lucasmarcos.model.entity.User;
 
@@ -76,6 +78,36 @@ public class UserDAO extends AbstractConnectionDAO{
         } catch (SQLException e) {
             throw new RuntimeException(e);
         }
+	}
+
+	public ArrayList<User> getUsers() {
+		// TODO Auto-generated method stub
+		ResultSet resultSet;
+        resultSet = null;
+        User usuario = null;
+        ArrayList<User> users = new ArrayList<User>();
+        String sql = "SELECT * FROM usuario";
+
+        try {
+            PreparedStatement stmt = (PreparedStatement) connection.prepareStatement(sql);
+            resultSet = stmt.executeQuery(sql);
+
+            while (resultSet.next()) {
+//                usuario = new User(resultSet.getInt(1), resultSet.getInt(6), resultSet.getString(4), resultSet.getString(5), resultSet.getInt(3), resultSet.getInt(2));
+                usuario = new User();
+                usuario.setId(resultSet.getInt(1));
+                usuario.setName(resultSet.getString(3));
+                usuario.setRating(resultSet.getInt(4));
+                users.add(usuario);               
+            }
+            stmt.close();
+
+
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
+        return users;		
+		
 	}
 	
 }

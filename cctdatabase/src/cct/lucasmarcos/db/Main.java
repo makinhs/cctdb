@@ -25,7 +25,7 @@ public class Main {
 		
 		friendDAO.getUserFriends(user);
 		
-		Teste2 t;
+		System.out.println("tudo certo");
 		
 		
 //		Product product = productDAO.getProduct(1);
